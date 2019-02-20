@@ -1,9 +1,9 @@
 imports:
-- path: sqladmin.jinja
-
+- path: https://raw.githubusercontent.com/suvenkat79/google/master/sqladmin.jinja
+ 
 resources:
 - name: database
-  type: sqladmin.jinja
+  type: https://raw.githubusercontent.com/suvenkat79/google/master/sqladmin.jinja
   properties:
     tier: db-n1-standard-1
     region: us-central1
