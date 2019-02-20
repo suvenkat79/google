@@ -1,14 +1,15 @@
 imports:
-- path: gs://templatesqa/vm_with_disks.py
+- path: https://raw.githubusercontent.com/suvenkat79/google/master/vm_with_disks.py
 resources:
 - name: vm-with-disks
-  type: gs://templatesqa/vm_with_disks.py
+  type: https://raw.githubusercontent.com/suvenkat79/google/master/vm_with_disks.py
   properties:
     zone: us-central1-a
     disks:
      - sizeGb: 200
        diskType: pd-standard
-       name: backup
+       name: backupdisk
      - sizeGb: 100
        diskType: pd-ssd
-       name: cache
+       name: cachedisk
+  
