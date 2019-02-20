@@ -1,0 +1,14 @@
+imports:
+- path: gs://templatesqa/vm_with_disks.py
+resources:
+- name: vm-with-disks
+  type: gs://templatesqa/vm_with_disks.py
+  properties:
+    zone: us-central1-a
+    disks:
+     - sizeGb: 200
+       diskType: pd-standard
+       name: backup
+     - sizeGb: 100
+       diskType: pd-ssd
+       name: cache
