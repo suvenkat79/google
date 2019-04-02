@@ -1,0 +1,16 @@
+imports:
+  - path: disk.py
+  - path: compute.py
+resources:
+  - name: disk-instances
+    type: disk.py
+    properties:
+      zone: us-west1-a
+      numberOfDisk: 2
+      diskSizeInGB: 20
+  - name: compute-instances
+    type: compute.py
+    properties:
+      zone: us-west1-a
+      machineType: n1-standard-1
+      numberOfVM: 2
