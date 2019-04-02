@@ -1,16 +1,23 @@
 imports:
   - path: disk.py
   - path: compute.py
+  - path: firewall.py
+  - path: network.py
 resources:
   - name: disk-instances
     type: disk.py
     properties:
       zone: us-west1-a
-      numberOfDisk: 2
-      diskSizeInGB: 20
+      diskSizeInGB: 10
+      autoDelete: True
   - name: compute-instances
     type: compute.py
     properties:
       zone: us-west1-a
       machineType: n1-standard-1
-      numberOfVM: 2
+  - name: firewall-instances
+    type: firewall.py
+  - name: network-instances
+    type: network.py
+    properties:
+      IPv4Range: 10.0.0.0/8
