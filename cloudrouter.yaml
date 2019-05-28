@@ -1,9 +1,9 @@
 imports:
-- path: cloud_router.jinja
+- path: https://raw.githubusercontent.com/suvenkat79/google/master/cloud_router.jinja
 
 resources:
 - name: my-cloud-router
-  type: cloud_router.jinja
+  type: https://raw.githubusercontent.com/suvenkat79/google/master/cloud_router.jinja
   properties:
     region: us-west1-b
     peerAddress: 1.2.3.4
