@@ -4,12 +4,12 @@ resources:
 - name: vm-with-disks
   type: https://raw.githubusercontent.com/suvenkat79/google/master/vm_with_disks.py
   properties:
-    zone: us-central1-a
+    zone: us-west1-a
     disks:
-     - sizeGb: 200
+     - sizeGb: 20
        diskType: pd-standard
        name: backupdisk
-     - sizeGb: 100
+     - sizeGb: 10
        diskType: pd-ssd
        name: cachedisk
   
