@@ -4,5 +4,5 @@ resources:
   properties:
     sizeGb: 1
     physicalBlockSizeBytes: 4096
-    type: https://www.googleapis.com/compute/v1/projects/deductive-reach-207607/zones/us-west1-a/diskTypes/pd-standard
+    type: https://www.googleapis.com/compute/v1/projects/itomcmp-269504/zones/us-west1-a/diskTypes/pd-standard
     zone: us-west1-a
