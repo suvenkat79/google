@@ -11,7 +11,10 @@
 resources:
 - name: {{ NETWORK }}
   type: compute.v1.network
-  properties: {}
+  properties: 
+    routingConfig:
+      routingMode: REGIONAL
+    autoCreateSubnetworks: true
 - name: {{ TARGET_VPN_GATEWAY }}
   type: compute.v1.targetVpnGateway
   properties:
